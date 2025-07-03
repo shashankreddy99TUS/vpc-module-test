@@ -46,3 +46,6 @@ variable "database_subnet_cidrs" {
  }
 
 
+variable "vpc_id" {
+  
+}

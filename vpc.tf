@@ -1,6 +1,4 @@
 module "vpc" {
-    #source = "https://github.com/shashankreddy99TUS/terraform-aws-vpc.git?ref=main"
-    #source = "https://github.com/shashankreddy99TUS/terraform-aws-vpc.git?ref=main"
     source = "git::https://github.com/shashankreddy99TUS/terraform-aws-vpc.git?ref=main"
 
    # source = "../terraform-aws-vpc"
@@ -14,5 +12,6 @@ module "vpc" {
     private_subnet_cidrs = var.private_subnet_cidrs
     database_subnet_cidrs = var.database_subnet_cidrs 
     is_peering_required = true 
-
+    
+    
 }
